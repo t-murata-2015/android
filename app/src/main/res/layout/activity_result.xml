@@ -7,34 +7,38 @@
     tools:context=".ResultActivity">
 
     <TextView
-        android:id="@+id/Large"
+        android:id="@+id/resultLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/textview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/myHandImage"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/resultLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gu"
-        tools:layout_editor_absoluteY="85dp" />
+        android:contentDescription="TODO" />
 
     <ImageView
         android:id="@+id/comHandImage"
         android:layout_width="130dp"
         android:layout_height="200dp"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultLabel"
         app:srcCompat="@drawable/com_gu"
-        tools:layout_editor_absoluteY="416dp" />
+        android:contentDescription="TODO" />
 
     <Button
         android:id="@+id/backButton"
